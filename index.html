@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c4f085f1e0.js" crossorigin="anonymous"></script>
+    <title>To Do App</title>
+</head>
+<body>
+    <div class="container-general">
+        <div class="contenedor-estatico">
+            <h1>#Todo App</h1>
+            <div class="ventanasP" id="ventanas">
+                <button class="ventanas" id="ventana1">All</button>
+                <button class="ventanas" id="ventana2">Active</button>
+                <button class="ventanas" id="ventana3">Completed</button>
+            </div>
+            <hr>
+        </div>
+        <div class="contenedor-dinamico" id="container">
+            <div class="add-tareas" id="add-tareas">
+                <input type="text" id="input-box" placeholder="add details">
+                <button class="bot" id="btn" >Add</button>
+            </div>
+            <ul id="list-container">
+                
+            </ul>
+            <button id="deleteBtn"><i class="fa-solid fa-trash"></i>  delete all</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.container-general {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+                        /* contenedor estatico */
+.contenedor-estatico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 600px;
+}
+
+/* titulo */
+h1 {
+    margin: 20px 0 0;
+}
+
+/* ventanas */
+.ventanasP {
+    display: flex;
+    gap: 120px;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.ventanas {
+    display: flex;
+    gap: 3rem;
+    border-style: none;
+    height: 25px;
+    width: 100px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: white;
+}
+.ventanas:hover{
+    background: rgb(233, 231, 231);
+    border-radius: 14px;
+
+}
+.active-tab {
+    border-bottom: 2px solid rgb(69, 128, 238);
+}
+
+/* linea horizontal */
+hr {
+    background-color: rgb(206, 206, 206);
+    width: 37rem;
+}
+
+
+                        /* contenedor dinamico */
+.contenedor-dinamico {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 100vh;
+    gap: 30px;
+}
+
+/* contenedor add tareas */
+.add-tareas {
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+}
+input{
+    border-radius: 10px;
+    border-color: rgb(206, 206, 206);
+    border-style: solid;
+    width: 455px;
+    height: 55px;
+    padding-left: 20px;
+
+}
+input:hover{
+    border-color: rgb(165, 165, 165);
+    background: #e2e1e1;
+}
+.bot{
+    border-radius: 10px;
+    background-color: hsl(207, 100%, 44%);
+    color: hsl(0, 0%, 100%);
+    border-style: none;
+    height: 55px;
+    width: 100px;
+    cursor: pointer;
+}
+.bot:hover{
+    background-color: hsl(207, 89%, 40%);
+}
+
+/* contenedor tareas  */
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    position: relative;
+}
+ul li img::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked {
+    text-decoration: line-through;
+    display: flex;
+    align-items: center;
+}
+ul li img.checked::before{
+    background-image: url('checked.png');
+}
+
+li i {
+    margin-left: 460px;
+}
+
+/* boton delete all */
+#deleteBtn {
+    background-color: #fb2f2f;
+    color: white;
+    font-size: 10px;
+    font-family: sans-serif;
+    border-radius: 5px;
+    border-style: none;
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+    margin: 0 0 0 505px;
+}
+#deleteBtn:hover{
+    background-color: #b51b1b;
+}
